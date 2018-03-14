@@ -11,28 +11,28 @@ class OrGateTest(unittest.TestCase):
         o.Input0 = False
         o.Input1 = False
         o.execute()
-        self.assertFalse(o.Output, "Class OrGate: Testcase 1 failed.")
+        self.assertFalse(o.Output, "Class AndGate: Testcase 1 failed.")
 
     def testcase_02(self):
         o = AndGate()
         o.Input0 = True
         o.Input1 = False
         o.execute()
-        self.assertFalse(o.Output, "Class OrGate: Testcase 2 failed.")
+        self.assertFalse(o.Output, "Class AndGate: Testcase 2 failed.")
 
     def testcase_03(self):
         o = AndGate()
         o.Input0 = False
         o.Input1 = True
         o.execute()
-        self.assertFalse(o.Output, "Class OrGate: Testcase 3 failed.")
+        self.assertFalse(o.Output, "Class AndGate: Testcase 3 failed.")
 
     def testcase_04(self):
         o = AndGate()
         o.Input0 = True
         o.Input1 = True
         o.execute()
-        self.assertTrue(o.Output, "Class OrGate: Testcase 4 failed.")
+        self.assertTrue(o.Output, "Class AndGate: Testcase 4 failed.")
 
 if __name__ == "__main__":
     unittest.main()
